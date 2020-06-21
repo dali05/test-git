@@ -1,0 +1,69 @@
+Repository: is just location where you are storing all the files related to your project. 
+Branch: Branch in Git is similar to the branch of a tree
+Local Repo: my local code 
+Remote Repo: code in the server repo
+Commit (Snapshot or CheckPoint In Your Local Repoo)
+Clone[from Local Or Remote]
+Push [Upload Local Change to Remote]
+Pull [You pull Changes from remote Repo to Your Local]
+Pull Request [Tell Other About Your Changes To Pull it from Local To Remote]
+master: the default beanch 
+origin: In Git, "origin" is a shorthand name for the remote repository that a project was originally cloned from.
+		More precisely, it is used instead of that original repository's URL - and thereby makes referencing much easier.
+
+cmd => 
+	
+	we use this cmd to create repo from my local directory 
+		git init: tto initialize git project
+		git config --list 
+		git config --global user.name "dali"
+		git config --global user.email "dali.laarousi@gmail.com"
+		git remote add origin + link git repo: to join a project to a git repo 
+		git push -u origin master => the -u means we are call the pull cmd with the push to pull from repo after push project
+		
+	git clone: to clone a project	
+	git add + file name or with . to add all: to add files to staging area
+	git commit -m "message": to add files from staging area to local repo
+	git rest head + file name: to remove file from local repo
+	git push origin master(branch)
+	git pull origin
+	git branch
+	git rest --hard + num revision: to revert the project to a specific revision
+	git log
+
+	git security
+		ssh-keygen -t rsa -b 4096 -c "dali.laaroussi@gmail.com" 
+			ssh => script shell
+			-t => type
+			rsa => RSA (Rivest–Shamir–Adleman) is an algorithm used by modern computers to encrypt and decrypt messages
+			-b => tne number of bit
+		ssh -T git@github.com: to test the key
+		
+			
+	git alias
+		git config --global alias.st status
+		
+	git branch	
+		git branch name of branch: to create new branch
+		git checkout name of branch: to go to branch 
+		git branch -d name of branch: to remove branch -d =>  save delete -D force delete
+		git branch -m name of new branch: to modify name of branch 
+		git merge name of branch to merge: to merge two branch with
+		git checkout -b name of new branch: create and go to new branch
+		
+	git stash
+		git stash: to add files to the stash part of local git repo
+		git stash list: to show this list of stash files
+		git stash pop: to get the last stash in our local repo and remove it from the stash list
+			pop => get files from the stash local repo
+		git stash apply: get the flies from stash and not remove it from the stash list	
+		git stash save "message": to add message to stash list
+		git stash pop stash@{num of stash}: to get a spesific stash from the list of stash
+		git stash drop: to remove the last stash
+		git stash drop stash@{num stash}: to remove a spesific stash from the list of stash
+		git stash show: to show information of a stash
+		git stash clear: remove all stash list
+		
+	
+	
+	
