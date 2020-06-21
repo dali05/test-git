@@ -24,7 +24,7 @@ cmd =>
 	git clone: to clone a project	
 	git add + file name or with . to add all: to add files to staging area
 	git commit -m "message": to add files from staging area to local repo
-	git rest head + file name: to remove file from local repo
+	git reset head + file name: to remove file from local repo
 	git push origin master(branch)
 	git pull origin
 	git branch
